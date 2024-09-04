@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+   background-color: rgb(255, 255, 255);
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+}
+.login-header{
+    text-align: center;
+}
+.login-header h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 42px;
+}
+.login-body{
+    background:white;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+form input[type="text"],
+form input[type="password"]{
+    padding: 8px 2px;
+    width: 100%;
+}
+input[type="submit"]{
+    padding: 8px 15px;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+}
+.error-message{
+    color: red;
+}
